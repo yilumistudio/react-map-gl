@@ -15,3 +15,5 @@ yarn-error.log
 .reify-cache
 
 .idea
+
+temp/

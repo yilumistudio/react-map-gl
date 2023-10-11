@@ -44,30 +44,11 @@ Refer to https://github.com/yilumistudio/openmaptiles/blob/buildsgmap/BUILD-SG-M
 # Build
 In codespace or windows VS code (connected to WSL ubuntu in this repo), run:
 ```
-npm install
-npm run build-dist
+yarn install
+yarn build
 ``` 
-This will build 
-```
-dist
-├── maplibre-gl-csp-dev.js
-├── maplibre-gl-csp-dev.js.map
-├── maplibre-gl-csp-worker-dev.js
-├── maplibre-gl-csp-worker-dev.js.map
-├── maplibre-gl-csp-worker.js
-├── maplibre-gl-csp-worker.js.map
-├── maplibre-gl-csp.js
-├── maplibre-gl-csp.js.map
-├── maplibre-gl-dev.js
-├── maplibre-gl-dev.js.map
-├── maplibre-gl.css
-├── maplibre-gl.d.ts
-├── maplibre-gl.js
-└── maplibre-gl.js.map
-```
-These files can be uploaded to hosting server or cdn.  
 
-Or we can host locally built dev js by running `npm run start`  
+These files can be uploaded to hosting server or cdn.  
 
 More commands can be learned from [package.json](../package.json)  
 
@@ -77,3 +58,11 @@ Todo
 # Dist
 While offical maplibre dist packages to cdn. We should have our own deploy script  
 to deploy to our target server or cdn.
+```bash
+npm publish --dry-run
+npm publish
+# to show all versions
+npm info @yilumi/react-map-gl versions
+# to unpublish a version
+npm unpublish @yilumi/react-map-gl@0.1.0 --registry https://verdaccio.yilumi.com
+```
