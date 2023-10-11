@@ -47,13 +47,21 @@ In codespace or windows VS code (connected to WSL ubuntu in this repo), run:
 yarn install
 yarn build
 ``` 
+## Build error
+If encounter build errors like `Only named exports may use 'export type'`. Please  
+change this line in `node_modules/maplibre-gl/dist/maplibre-gl.d.ts`:  
+`export type * from "@maplibre/maplibre-gl-style-spec";` to  
+`export * from "@maplibre/maplibre-gl-style-spec";`
 
 These files can be uploaded to hosting server or cdn.  
 
 More commands can be learned from [package.json](../package.json)  
 
 # Test
-Todo
+TODO and issues 
+- We changed maplibre-gl to our own version, which is essentially 3.3.*. This is  
+  quite different from 2.4.0 which was used in visgl/react-map-gl.
+  Need through test to make sure everything works.
 
 # Dist
 While offical maplibre dist packages to cdn. We should have our own deploy script  
