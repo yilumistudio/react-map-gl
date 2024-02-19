@@ -1,7 +1,8 @@
 # Changelog
 
-## 0.1.4
-Made a new release after symbol change in yilumistudio/maplibre-gl@0.1.11.
+## 0.1.5
+Made a new release after symbol change in yilumistudio/maplibre-gl@0.1.11 (this  
+change in maplibre-gl was to fix a covering tiles vertical culling bug).
 
 ## 0.1.1
 
