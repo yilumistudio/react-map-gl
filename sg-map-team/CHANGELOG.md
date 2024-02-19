@@ -1,3 +1,7 @@
+# Changelog
+
+## 0.1.4
+Made a new release after symbol change in yilumistudio/maplibre-gl@0.1.11.
 
 ## 0.1.1
 
